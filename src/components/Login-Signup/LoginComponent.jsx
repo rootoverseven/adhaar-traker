@@ -24,8 +24,6 @@ export default function LoginComponent() {
         // userDetails[e.target.name]=e.target.value;
     }
     return (
-        <div className="auth-wrapper">
-          <div className="auth-inner">
         <form>
             <h3>Sign In</h3>
             <div className="form-group">
@@ -47,8 +45,5 @@ export default function LoginComponent() {
                 Forgot <a href="#">password?</a>
             </p>
         </form>
-        
-        </div>
-        </div>
     )
 }
