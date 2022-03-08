@@ -1,5 +1,43 @@
 .home{
     width: 100%;
     height: 100vh;
-    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home a{
+    text-decoration: none;
+}
+.home .card{
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #000000;
+    text-align: center;
+    background-size: 300%;
+    background-position: left;
+    transition: 0.3s ease;
+    text-decoration: none;
+
+}
+.home .card.card1{
+    background: linear-gradient(70deg, #fff 0%, #fff 50%, #ffcc33 50%);
+    background-size: 300%;
+}
+.home .card.card2{
+    background: linear-gradient(70deg, #fff 0%, #fff 50%, #3385ff 50%);
+    background-size: 300%;
+}
+.home .card:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.4);
+    background-position: right;
 }

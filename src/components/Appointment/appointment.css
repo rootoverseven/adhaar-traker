@@ -1,0 +1,70 @@
+.appointment{
+    padding: 1rem 3rem;
+    padding-top: 5rem;
+}
+.appointment__track{
+    width: 100%;
+    margin: 2rem 0;
+    height: 6rem;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.175);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.175);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    color:#fff;
+
+}
+.appointment__track .header{
+    font-size: 1.5rem;
+    color: #fff;
+}
+.appointment__track  button{
+    border: none;
+    background: #f7d128;
+    padding: .6rem 2rem;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.appointment__book{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.appointment__book div {
+    font-size: 1.5rem;
+    color: #fff;
+}
+.appointment__book button{
+    border: none;
+    background: #167bff;
+    padding: .6rem 2rem;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.appointment__table{
+    margin: 1rem 0;
+    width: 100%;
+    min-height: 30rem;
+    background-color: rgba(255, 255, 255, 0.175);
+    border-radius: 10px;
+    padding:1rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.175);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.appointment__table .header{
+    font-size: 1.5rem;
+    color: #fff;
+}
