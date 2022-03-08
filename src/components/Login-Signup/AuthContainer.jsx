@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import LoginComponent from "./LoginComponent";
 import SignUpComponent from "./SignUpComponent";
 import Home from "../Home/Home";
+import MapTracker from "../Tracker/MapTracker";
 export default function AuthContainer() {
   return (
     <Router>
@@ -31,15 +32,14 @@ export default function AuthContainer() {
         </nav>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/track" element={<MapTracker />} />
+
         </Routes>
-        <div className="auth-wrapper">
-          <div className="auth-inner">
+        
             <Routes>
               <Route path="/sign-in" element={<LoginComponent />} />
               <Route path="/sign-up" element={<SignUpComponent />} />
             </Routes>
-          </div>
-        </div>
       </div>
     </Router>
   );

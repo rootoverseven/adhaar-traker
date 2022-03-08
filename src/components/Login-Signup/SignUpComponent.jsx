@@ -37,6 +37,8 @@ export default function SignUpComponent() {
         // userDetails[e.target.name]=e.target.value;
     }
     return (
+        <div className="auth-wrapper">
+          <div className="auth-inner">
         <form>
             <h3>Sign Up</h3>
             <div className='d-flex'>
@@ -106,5 +108,7 @@ export default function SignUpComponent() {
                 Already registered <a href="#">sign in?</a>
             </p>
         </form>
+        </div>
+        </div>
     )
 }
