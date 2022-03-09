@@ -1,9 +1,12 @@
 import React from 'react'
 import { useState } from "react";
 import { loginUser } from '../../api';
+import { useNavigate } from 'react-router-dom';
 
 
 export default function LoginComponent() {
+    const navigate = useNavigate();
+
     let [userDetails, setUserDetails] = useState({
         username: "",
         password: ""
@@ -14,6 +17,8 @@ export default function LoginComponent() {
             let res = await loginUser(userDetails)
             console.log(res)
             localStorage.setItem('app_access_token', res.data.token)
+            navigate('/')
+
         } catch (error) {
             console.log(error)
         }
