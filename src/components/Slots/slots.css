@@ -1,12 +1,25 @@
-.map-tracker{
+.slots{
     margin-top:8rem;
     color: white;
     padding: 0 3rem;
 }
-.map-tracker-top{
+.slots h3{
+    text-align: left;
+    margin-bottom: 3rem;
+}
+.slots-top{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: column;
+    
+    margin-bottom: 2rem;
+}
+.table-top, .table-bottom{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 1rem;
 }
 .map-tracker-bottom{
     width:100%;
@@ -38,13 +51,13 @@
 
 .pin1 {
   
-    border-radius: 50% 50% 50% 0;
-    border: 4px solid rgb(255, 255, 255);
-    width: 48px;
-    height: 48px;
-    transform: rotate(-45deg);
-    background: rgb(255, 255, 255);
-    box-shadow: 0px 5px 30px -3px rgba(1, 1, 1, 0.192);
+  border-radius: 50% 50% 50% 0;
+  border: 4px solid rgb(255, 255, 255);
+  width: 48px;
+  height: 48px;
+  transform: rotate(-45deg);
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 5px 30px -3px rgba(1, 1, 1, 0.192);
 }
 
 

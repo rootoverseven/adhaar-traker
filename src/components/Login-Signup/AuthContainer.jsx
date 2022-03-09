@@ -7,6 +7,7 @@ import SignUpComponent from "./SignUpComponent";
 import Appointment from "../Appointment/Appointment";
 import Home from "../Home/Home";
 import MapTracker from "../Tracker/MapTracker";
+import Slots from "../Slots/Slots";
 export default function AuthContainer() {
   const location = useLocation();
   return (
@@ -36,6 +37,7 @@ export default function AuthContainer() {
           <Route path="/" element={<Home />} />
           <Route path="/appointment" element={<Appointment />} />
           <Route path="/track" element={<MapTracker />} />
+          <Route path="/slots" element={<Slots/>}/>
         </Routes>
         {location.pathname.includes("sign") && (
           <div className="auth-wrapper">
